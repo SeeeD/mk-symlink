@@ -4,6 +4,7 @@
 	"description": "Creates a symbolic link",
 	"license": "MIT",
 	"repository": "SeeeD/mk-symlink",
+	"main": "index.js",
 	"files": [
 		"index.js"
 	],
