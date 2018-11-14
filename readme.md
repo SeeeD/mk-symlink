@@ -1,4 +1,4 @@
-# make-symlinks
+# mk-symlink
 > Create symbolic link (symlink)
 
 
@@ -11,20 +11,20 @@ $ npm install mk-symlink
 ## Usage
 
 ```js
-const mkSymlinks = require('mk-symlinks');
+const mkSymlink = require('mk-symlink');
 
 const sourcePath = '/dev/configurations';
 const sourceFile = 'development.json';
 const targetPath = '/dev/project/api';
 const targetFile = 'config.json';
 
-mkSymlinks.make(targetPath, targetFile, sourcePath, sourceFile);
+mkSymlink.make(targetPath, targetFile, sourcePath, sourceFile);
 ```
 
 
 ## API
 
-### mkSymlinks.make(destinationPath, destinationFilename, sourcePath, sourceFilename)
+### mkSymlink.make(destinationPath, destinationFilename, sourcePath, sourceFilename)
 
 Creates a symbolic link by passing the path and filename of the source and target.
 
