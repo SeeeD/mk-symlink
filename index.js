@@ -15,6 +15,10 @@ module.exports.make = function (destinationPath, destinationFilename, sourcePath
 	destinationPath = path.resolve('', destinationPath);
 	var target = path.resolve(path.join(sourcePath, sourceFilename));
 
+	var strategy = {
+		del: {force: true}
+	};
+
 	if (!fs.existsSync(destinationPath)) {
 		throw new Error('Destination path ' + destinationPath + ' doesn\'t exist');
 	}
