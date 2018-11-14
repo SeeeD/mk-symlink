@@ -1,0 +1,40 @@
+{
+	"name": "mk-symlink",
+	"version": "1.0.0",
+	"description": "Creates a symbolic link",
+	"license": "MIT",
+	"repository": "SeeeD/mk-symlink",
+	"files": [
+		"index.js"
+	],
+	"engines": {
+		"node": ">= 0.10"
+	},
+	"author": {
+		"name": "Stefan Riedinger",
+		"url": "https://github.com/SeeeD"
+	},
+	"keywords": [
+		"create",
+		"glob",
+		"link",
+		"links",
+		"ln",
+		"make",
+		"symbolic",
+		"symlinks",
+		"tool"
+	],
+	"dependencies": {
+		"del": "^2.2.2",
+		"pify": "^2.3.0",
+		"pinkie-promise": "^2.0.1"
+	},
+	"devDependencies": {
+		"ava": "^0.16.0",
+		"is-symbolic-link": "^1.0.1",
+		"nyc": "^11.4.1",
+		"tempfile": "^1.1.1",
+		"xo": "^0.16.0"
+	}
+}
