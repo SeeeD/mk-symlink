@@ -27,7 +27,10 @@ module.exports.make = function (destinationPath, destinationFilename, sourcePath
 	
 	return Promise.resolve()
 		.then(function () {
-			fs.unlinkSync(dest); 
+			if(fs.existsSync(dest)) {
+				fs.unlinkSync(dest); 
+			}
+			
 			return Promise.resolve(fs.existsSync(dest) ? del(dest, strategy.del) : null);
 		})
 		.then(function () {
