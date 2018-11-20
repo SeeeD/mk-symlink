@@ -1,6 +1,6 @@
 {
 	"name": "mk-symlink",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "Creates a symbolic link",
 	"license": "MIT",
 	"repository": "SeeeD/mk-symlink",
